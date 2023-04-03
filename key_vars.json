@@ -1,0 +1,191 @@
+{
+  "Admin@audimanufacturer.auto.com": {
+    "key": "Admin@audimanufacturer.auto.com",
+    "org": "audimanufacturer.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/audimanufacturer.auto.com/users/Admin@audimanufacturer.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/audimanufacturer.auto.com/users/Admin@audimanufacturer.auto.com/msp/keystore/priv_sk",
+    "type": "users"
+  },
+  "Admin@auto.com": {
+    "key": "Admin@auto.com",
+    "org": "auto.com",
+    "path": "/home/vars/keyfiles/ordererOrganizations/auto.com/users/Admin@auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/ordererOrganizations/auto.com/users/Admin@auto.com/msp/keystore/priv_sk",
+    "type": "users"
+  },
+  "Admin@bajajinsurance.auto.com": {
+    "key": "Admin@bajajinsurance.auto.com",
+    "org": "bajajinsurance.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/bajajinsurance.auto.com/users/Admin@bajajinsurance.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/bajajinsurance.auto.com/users/Admin@bajajinsurance.auto.com/msp/keystore/priv_sk",
+    "type": "users"
+  },
+  "Admin@benzmanufacturer.auto.com": {
+    "key": "Admin@benzmanufacturer.auto.com",
+    "org": "benzmanufacturer.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/benzmanufacturer.auto.com/users/Admin@benzmanufacturer.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/benzmanufacturer.auto.com/users/Admin@benzmanufacturer.auto.com/msp/keystore/priv_sk",
+    "type": "users"
+  },
+  "Admin@mvd.auto.com": {
+    "key": "Admin@mvd.auto.com",
+    "org": "mvd.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/mvd.auto.com/users/Admin@mvd.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/mvd.auto.com/users/Admin@mvd.auto.com/msp/keystore/priv_sk",
+    "type": "users"
+  },
+  "Admin@sbiinsurance.auto.com": {
+    "key": "Admin@sbiinsurance.auto.com",
+    "org": "sbiinsurance.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/sbiinsurance.auto.com/users/Admin@sbiinsurance.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/sbiinsurance.auto.com/users/Admin@sbiinsurance.auto.com/msp/keystore/priv_sk",
+    "type": "users"
+  },
+  "audimanufacturer.auto.com": {
+    "key": "audimanufacturer.auto.com",
+    "org": "audimanufacturer.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/audimanufacturer.auto.com/ca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/audimanufacturer.auto.com/ca/priv_sk",
+    "type": "ca"
+  },
+  "audimanufacturer.auto.com.tlsca": {
+    "key": "audimanufacturer.auto.com",
+    "org": "audimanufacturer.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/audimanufacturer.auto.com/tlsca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/audimanufacturer.auto.com/tlsca/priv_sk",
+    "type": "tlsca"
+  },
+  "auto.com": {
+    "key": "auto.com",
+    "org": "auto.com",
+    "path": "/home/vars/keyfiles/ordererOrganizations/auto.com/ca/priv_sk",
+    "pkey": "keyfiles/ordererOrganizations/auto.com/ca/priv_sk",
+    "type": "ca"
+  },
+  "auto.com.tlsca": {
+    "key": "auto.com",
+    "org": "auto.com",
+    "path": "/home/vars/keyfiles/ordererOrganizations/auto.com/tlsca/priv_sk",
+    "pkey": "keyfiles/ordererOrganizations/auto.com/tlsca/priv_sk",
+    "type": "tlsca"
+  },
+  "bajajinsurance.auto.com": {
+    "key": "bajajinsurance.auto.com",
+    "org": "bajajinsurance.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/bajajinsurance.auto.com/ca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/bajajinsurance.auto.com/ca/priv_sk",
+    "type": "ca"
+  },
+  "bajajinsurance.auto.com.tlsca": {
+    "key": "bajajinsurance.auto.com",
+    "org": "bajajinsurance.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/bajajinsurance.auto.com/tlsca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/bajajinsurance.auto.com/tlsca/priv_sk",
+    "type": "tlsca"
+  },
+  "benzmanufacturer.auto.com": {
+    "key": "benzmanufacturer.auto.com",
+    "org": "benzmanufacturer.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/benzmanufacturer.auto.com/ca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/benzmanufacturer.auto.com/ca/priv_sk",
+    "type": "ca"
+  },
+  "benzmanufacturer.auto.com.tlsca": {
+    "key": "benzmanufacturer.auto.com",
+    "org": "benzmanufacturer.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/benzmanufacturer.auto.com/tlsca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/benzmanufacturer.auto.com/tlsca/priv_sk",
+    "type": "tlsca"
+  },
+  "ernakulam.mvd.auto.com": {
+    "key": "ernakulam.mvd.auto.com",
+    "org": "mvd.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/mvd.auto.com/peers/ernakulam.mvd.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/mvd.auto.com/peers/ernakulam.mvd.auto.com/msp/keystore/priv_sk",
+    "type": "peers"
+  },
+  "mvd.auto.com": {
+    "key": "mvd.auto.com",
+    "org": "mvd.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/mvd.auto.com/ca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/mvd.auto.com/ca/priv_sk",
+    "type": "ca"
+  },
+  "mvd.auto.com.tlsca": {
+    "key": "mvd.auto.com",
+    "org": "mvd.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/mvd.auto.com/tlsca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/mvd.auto.com/tlsca/priv_sk",
+    "type": "tlsca"
+  },
+  "orderer1.auto.com": {
+    "key": "orderer1.auto.com",
+    "org": "auto.com",
+    "path": "/home/vars/keyfiles/ordererOrganizations/auto.com/orderers/orderer1.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/ordererOrganizations/auto.com/orderers/orderer1.auto.com/msp/keystore/priv_sk",
+    "type": "orderers"
+  },
+  "orderer2.auto.com": {
+    "key": "orderer2.auto.com",
+    "org": "auto.com",
+    "path": "/home/vars/keyfiles/ordererOrganizations/auto.com/orderers/orderer2.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/ordererOrganizations/auto.com/orderers/orderer2.auto.com/msp/keystore/priv_sk",
+    "type": "orderers"
+  },
+  "orderer3.auto.com": {
+    "key": "orderer3.auto.com",
+    "org": "auto.com",
+    "path": "/home/vars/keyfiles/ordererOrganizations/auto.com/orderers/orderer3.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/ordererOrganizations/auto.com/orderers/orderer3.auto.com/msp/keystore/priv_sk",
+    "type": "orderers"
+  },
+  "peer.audimanufacturer.auto.com": {
+    "key": "peer.audimanufacturer.auto.com",
+    "org": "audimanufacturer.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/audimanufacturer.auto.com/peers/peer.audimanufacturer.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/audimanufacturer.auto.com/peers/peer.audimanufacturer.auto.com/msp/keystore/priv_sk",
+    "type": "peers"
+  },
+  "peer.bajajinsurance.auto.com": {
+    "key": "peer.bajajinsurance.auto.com",
+    "org": "bajajinsurance.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/bajajinsurance.auto.com/peers/peer.bajajinsurance.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/bajajinsurance.auto.com/peers/peer.bajajinsurance.auto.com/msp/keystore/priv_sk",
+    "type": "peers"
+  },
+  "peer.benzmanufacturer.auto.com": {
+    "key": "peer.benzmanufacturer.auto.com",
+    "org": "benzmanufacturer.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/benzmanufacturer.auto.com/peers/peer.benzmanufacturer.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/benzmanufacturer.auto.com/peers/peer.benzmanufacturer.auto.com/msp/keystore/priv_sk",
+    "type": "peers"
+  },
+  "peer.sbiinsurance.auto.com": {
+    "key": "peer.sbiinsurance.auto.com",
+    "org": "sbiinsurance.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/sbiinsurance.auto.com/peers/peer.sbiinsurance.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/sbiinsurance.auto.com/peers/peer.sbiinsurance.auto.com/msp/keystore/priv_sk",
+    "type": "peers"
+  },
+  "sbiinsurance.auto.com": {
+    "key": "sbiinsurance.auto.com",
+    "org": "sbiinsurance.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/sbiinsurance.auto.com/ca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/sbiinsurance.auto.com/ca/priv_sk",
+    "type": "ca"
+  },
+  "sbiinsurance.auto.com.tlsca": {
+    "key": "sbiinsurance.auto.com",
+    "org": "sbiinsurance.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/sbiinsurance.auto.com/tlsca/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/sbiinsurance.auto.com/tlsca/priv_sk",
+    "type": "tlsca"
+  },
+  "trivandrum.mvd.auto.com": {
+    "key": "trivandrum.mvd.auto.com",
+    "org": "mvd.auto.com",
+    "path": "/home/vars/keyfiles/peerOrganizations/mvd.auto.com/peers/trivandrum.mvd.auto.com/msp/keystore/priv_sk",
+    "pkey": "keyfiles/peerOrganizations/mvd.auto.com/peers/trivandrum.mvd.auto.com/msp/keystore/priv_sk",
+    "type": "peers"
+  }
+}

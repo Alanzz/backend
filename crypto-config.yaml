@@ -1,0 +1,90 @@
+---
+OrdererOrgs:
+  - Name: auto.com
+    Domain: auto.com
+    Specs:
+      - Hostname: orderer1
+        SANS:
+          - 172.22.16.127
+      - Hostname: orderer2
+        SANS:
+          - 172.22.16.127
+      - Hostname: orderer3
+        SANS:
+          - 172.22.16.127
+
+PeerOrgs:
+  - Name: audimanufacturer.auto.com
+    Domain: audimanufacturer.auto.com
+    EnableNodeOUs: true
+    CA:
+      Hostname: ca1
+      CommonName: ca1.audimanufacturer.auto.com
+      Country: US
+      Province: North Carolina
+      Locality: Raleigh
+    Specs:
+      - Hostname: peer
+        CommonName: peer.audimanufacturer.auto.com
+        SANS:
+          - 172.22.16.127
+  - Name: bajajinsurance.auto.com
+    Domain: bajajinsurance.auto.com
+    EnableNodeOUs: true
+    CA:
+      Hostname: ca1
+      CommonName: ca1.bajajinsurance.auto.com
+      Country: US
+      Province: North Carolina
+      Locality: Raleigh
+    Specs:
+      - Hostname: peer
+        CommonName: peer.bajajinsurance.auto.com
+        SANS:
+          - 172.22.16.127
+  - Name: benzmanufacturer.auto.com
+    Domain: benzmanufacturer.auto.com
+    EnableNodeOUs: true
+    CA:
+      Hostname: ca1
+      CommonName: ca1.benzmanufacturer.auto.com
+      Country: US
+      Province: North Carolina
+      Locality: Raleigh
+    Specs:
+      - Hostname: peer
+        CommonName: peer.benzmanufacturer.auto.com
+        SANS:
+          - 172.22.16.127
+  - Name: mvd.auto.com
+    Domain: mvd.auto.com
+    EnableNodeOUs: true
+    CA:
+      Hostname: ca1
+      CommonName: ca1.mvd.auto.com
+      Country: US
+      Province: North Carolina
+      Locality: Raleigh
+    Specs:
+      - Hostname: ernakulam
+        CommonName: ernakulam.mvd.auto.com
+        SANS:
+          - 172.22.16.127
+      - Hostname: trivandrum
+        CommonName: trivandrum.mvd.auto.com
+        SANS:
+          - 172.22.16.127
+  - Name: sbiinsurance.auto.com
+    Domain: sbiinsurance.auto.com
+    EnableNodeOUs: true
+    CA:
+      Hostname: ca1
+      CommonName: ca1.sbiinsurance.auto.com
+      Country: US
+      Province: North Carolina
+      Locality: Raleigh
+    Specs:
+      - Hostname: peer
+        CommonName: peer.sbiinsurance.auto.com
+        SANS:
+          - 172.22.16.127

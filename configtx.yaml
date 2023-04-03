@@ -1,0 +1,251 @@
+---
+Organizations:
+  - &audimanufacturer-auto-com
+      Name: audimanufacturer-auto-com
+      ID: audimanufacturer-auto-com
+      MSPDir: keyfiles/peerOrganizations/audimanufacturer.auto.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('audimanufacturer-auto-com.admin', 'audimanufacturer-auto-com.peer', 'audimanufacturer-auto-com.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('audimanufacturer-auto-com.admin', 'audimanufacturer-auto-com.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('audimanufacturer-auto-com.admin')"
+        Endorsement:
+          Type: Signature
+          Rule: "OR('audimanufacturer-auto-com.peer')"
+
+      AnchorPeers:
+      - Host: 172.22.16.127
+        Port: 7008
+  - &auto-com
+      Name: auto-com
+      ID: auto-com
+      MSPDir: keyfiles/ordererOrganizations/auto.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('auto-com.member')"
+        Writers:
+          Type: Signature
+          Rule: "OR('auto-com.member')"
+        Admins:
+          Type: Signature
+          Rule: "OR('auto-com.admin')"
+  - &bajajinsurance-auto-com
+      Name: bajajinsurance-auto-com
+      ID: bajajinsurance-auto-com
+      MSPDir: keyfiles/peerOrganizations/bajajinsurance.auto.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('bajajinsurance-auto-com.admin', 'bajajinsurance-auto-com.peer', 'bajajinsurance-auto-com.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('bajajinsurance-auto-com.admin', 'bajajinsurance-auto-com.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('bajajinsurance-auto-com.admin')"
+        Endorsement:
+          Type: Signature
+          Rule: "OR('bajajinsurance-auto-com.peer')"
+
+      AnchorPeers:
+      - Host: 172.22.16.127
+        Port: 7010
+  - &benzmanufacturer-auto-com
+      Name: benzmanufacturer-auto-com
+      ID: benzmanufacturer-auto-com
+      MSPDir: keyfiles/peerOrganizations/benzmanufacturer.auto.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('benzmanufacturer-auto-com.admin', 'benzmanufacturer-auto-com.peer', 'benzmanufacturer-auto-com.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('benzmanufacturer-auto-com.admin', 'benzmanufacturer-auto-com.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('benzmanufacturer-auto-com.admin')"
+        Endorsement:
+          Type: Signature
+          Rule: "OR('benzmanufacturer-auto-com.peer')"
+
+      AnchorPeers:
+      - Host: 172.22.16.127
+        Port: 7007
+  - &mvd-auto-com
+      Name: mvd-auto-com
+      ID: mvd-auto-com
+      MSPDir: keyfiles/peerOrganizations/mvd.auto.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('mvd-auto-com.admin', 'mvd-auto-com.peer', 'mvd-auto-com.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('mvd-auto-com.admin', 'mvd-auto-com.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('mvd-auto-com.admin')"
+        Endorsement:
+          Type: Signature
+          Rule: "OR('mvd-auto-com.peer')"
+
+      AnchorPeers:
+      - Host: 172.22.16.127
+        Port: 7005
+      - Host: 172.22.16.127
+        Port: 7006
+  - &sbiinsurance-auto-com
+      Name: sbiinsurance-auto-com
+      ID: sbiinsurance-auto-com
+      MSPDir: keyfiles/peerOrganizations/sbiinsurance.auto.com/msp
+      Policies:
+        Readers:
+          Type: Signature
+          Rule: "OR('sbiinsurance-auto-com.admin', 'sbiinsurance-auto-com.peer', 'sbiinsurance-auto-com.client')"
+        Writers:
+          Type: Signature
+          Rule: "OR('sbiinsurance-auto-com.admin', 'sbiinsurance-auto-com.client')"
+        Admins:
+          Type: Signature
+          Rule: "OR('sbiinsurance-auto-com.admin')"
+        Endorsement:
+          Type: Signature
+          Rule: "OR('sbiinsurance-auto-com.peer')"
+
+      AnchorPeers:
+      - Host: 172.22.16.127
+        Port: 7009
+
+Capabilities:
+  Channel: &ChannelCapabilities
+    V2_0: true
+
+  Orderer: &OrdererCapabilities
+    V2_0: true
+
+  Application: &ApplicationCapabilities
+    V2_0: true
+
+Application: &ApplicationDefaults
+  Organizations:
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+    LifecycleEndorsement:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Endorsement"
+    Endorsement:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Endorsement"
+
+  Capabilities:
+    <<: *ApplicationCapabilities
+
+Orderer: &OrdererDefaults
+  OrdererType: etcdraft
+
+  BatchTimeout: 2s
+
+  BatchSize:
+    MaxMessageCount: 10
+    AbsoluteMaxBytes: 99 MB
+    PreferredMaxBytes: 512 KB
+
+  Addresses:
+  - 172.22.16.127:7017
+  - 172.22.16.127:7018
+  - 172.22.16.127:7019
+  EtcdRaft:
+    Consenters:
+    - Host: 172.22.16.127
+      Port: 7017
+      ClientTLSCert: keyfiles/ordererOrganizations/auto.com/orderers/orderer1.auto.com/tls/server.crt
+      ServerTLSCert: keyfiles/ordererOrganizations/auto.com/orderers/orderer1.auto.com/tls/server.crt
+    - Host: 172.22.16.127
+      Port: 7018
+      ClientTLSCert: keyfiles/ordererOrganizations/auto.com/orderers/orderer2.auto.com/tls/server.crt
+      ServerTLSCert: keyfiles/ordererOrganizations/auto.com/orderers/orderer2.auto.com/tls/server.crt
+    - Host: 172.22.16.127
+      Port: 7019
+      ClientTLSCert: keyfiles/ordererOrganizations/auto.com/orderers/orderer3.auto.com/tls/server.crt
+      ServerTLSCert: keyfiles/ordererOrganizations/auto.com/orderers/orderer3.auto.com/tls/server.crt
+  Organizations:
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+    BlockValidation:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+
+Channel: &ChannelDefaults
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+
+  Capabilities:
+    <<: *ChannelCapabilities
+
+Profiles:
+  OrgChannel:
+    Consortium: SampleConsortium
+    <<: *ChannelDefaults
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+      - *audimanufacturer-auto-com
+      - *bajajinsurance-auto-com
+      - *benzmanufacturer-auto-com
+      - *mvd-auto-com
+      - *sbiinsurance-auto-com
+      Capabilities:
+        <<: *ApplicationCapabilities
+
+  OrdererGenesis:
+    <<: *ChannelDefaults
+    Capabilities:
+      <<: *ChannelCapabilities
+    Orderer:
+      <<: *OrdererDefaults
+      Organizations:
+      - *auto-com
+      Capabilities:
+        <<: *OrdererCapabilities
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+      - <<: *auto-com
+    Consortiums:
+      SampleConsortium:
+        Organizations:
+        - *audimanufacturer-auto-com
+        - *bajajinsurance-auto-com
+        - *benzmanufacturer-auto-com
+        - *mvd-auto-com
+        - *sbiinsurance-auto-com
